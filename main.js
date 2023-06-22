@@ -1,13 +1,12 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  const choice = document.querySelector('input').value
-  const url = 'https://pokeapi.co/api/v2/pokemon/'+choice
 
-  fetch(url)
+  fetch("https://api.kanye.rest")
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
+        document.querySelector('p').innerText = data.quote
       })
       .catch(err => {
           console.log(`error ${err}`)
