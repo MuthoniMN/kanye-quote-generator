@@ -1,0 +1,29 @@
+body{
+    background: azure;
+    text-align: center;
+}
+
+button{
+    display: block;
+    margin: 24px auto;
+    padding: 12px 24px;
+    background: lightseagreen;
+    color: white;
+    border: none;
+
+}
+
+p{
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 800px) {
+    p{
+        width: 50%;
+    }
+}
